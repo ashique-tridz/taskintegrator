@@ -10,16 +10,21 @@
   "client_id",
   "client_secret",
   "redirect_uri",
+  "base_url",
+  "scheduler_interval",
   "access_token",
-  "refresh_token"
+  "refresh_token",
+  "last_sync"
  ],
  "fields": [
   {
    "default": "Asana",
    "fieldname": "integration_name",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Integration Name",
-   "options": "Asana\nTrello\nClickup\nJira"
+   "options": "Asana\nTrello\nClickup\nJira",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -30,17 +35,23 @@
   {
    "fieldname": "client_id",
    "fieldtype": "Data",
-   "label": "Client ID"
+   "in_list_view": 1,
+   "label": "Client ID",
+   "reqd": 1
   },
   {
    "fieldname": "client_secret",
    "fieldtype": "Data",
-   "label": "Client Secret"
+   "in_list_view": 1,
+   "label": "Client Secret",
+   "reqd": 1
   },
   {
    "fieldname": "redirect_uri",
    "fieldtype": "Data",
-   "label": "Rediret URL"
+   "in_list_view": 1,
+   "label": "Rediret URL",
+   "reqd": 1
   },
   {
    "fieldname": "access_token",
@@ -53,12 +64,30 @@
    "fieldtype": "Small Text",
    "label": "Refresh Token",
    "read_only": 1
+  },
+  {
+   "fieldname": "base_url",
+   "fieldtype": "Data",
+   "label": "Base URL"
+  },
+  {
+   "default": "15",
+   "description": "In Minute",
+   "fieldname": "scheduler_interval",
+   "fieldtype": "Int",
+   "label": "Schedular Intervel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-05 17:02:47.361194",
+ "modified": "2025-11-05 20:17:31.079091",
  "modified_by": "Administrator",
  "module": "Taskintegrator",
  "name": "Integration Settings",

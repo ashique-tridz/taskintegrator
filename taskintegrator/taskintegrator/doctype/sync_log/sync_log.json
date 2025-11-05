@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-05 20:28:51.394470",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "platform",
+  "start_time",
+  "end_time",
+  "tasks_fetched",
+  "tasks_created",
+  "tasks_updated",
+  "errors"
+ ],
+ "fields": [
+  {
+   "fieldname": "platform",
+   "fieldtype": "Data",
+   "label": "Platform"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": " End Time"
+  },
+  {
+   "fieldname": "tasks_fetched",
+   "fieldtype": "Int",
+   "label": "Tasks Fetched"
+  },
+  {
+   "fieldname": "tasks_created",
+   "fieldtype": "Int",
+   "label": "Tasks Created"
+  },
+  {
+   "fieldname": "tasks_updated",
+   "fieldtype": "Int",
+   "label": "Tasks Updated"
+  },
+  {
+   "fieldname": "errors",
+   "fieldtype": "Text",
+   "label": "Errors"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-05 20:31:49.402290",
+ "modified_by": "Administrator",
+ "module": "Taskintegrator",
+ "name": "Sync Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

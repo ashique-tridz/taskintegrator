@@ -2,6 +2,8 @@ import frappe
 import requests
 import uuid
 
+from frappe.utils import now
+
 @frappe.whitelist(allow_guest=True)
 def start_auth():
     """
@@ -79,6 +81,7 @@ def oauth_callback():
     # Save tokens securely in Integration Settings
     settings.access_token = token_data.get("access_token")
     settings.refresh_token = token_data.get("refresh_token")
+    settings.last_sync = now()
     settings.save()
     frappe.db.commit()
 
