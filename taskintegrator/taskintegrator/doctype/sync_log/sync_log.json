@@ -16,8 +16,9 @@
  "fields": [
   {
    "fieldname": "platform",
-   "fieldtype": "Data",
-   "label": "Platform"
+   "fieldtype": "Select",
+   "label": "Platform",
+   "options": "Asana"
   },
   {
    "fieldname": "start_time",
@@ -53,7 +54,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-05 20:31:49.402290",
+ "modified": "2025-11-05 20:36:10.146984",
  "modified_by": "Administrator",
  "module": "Taskintegrator",
  "name": "Sync Log",
